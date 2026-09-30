@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduGenie — AI Learning Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div class="logo">EG</div>
+      <div>
+        <p class="eyebrow">AI-POWERED LEARNING ASSISTANT</p>
+        <h1>EduGenie</h1>
+        <p class="tagline">Learn smarter. Understand faster.</p>
+      </div>
+    </header>
+
+    <section class="card intro">
+      <h2>Your personal study companion</h2>
+      <p>Ask questions, simplify difficult concepts, summarize notes, create quizzes, and build a learning path with Gemini.</p>
+    </section>
+
+    <section class="card workspace">
+      <label for="task">Choose a task</label>
+      <select id="task">
+        <option value="qa">Ask a Question</option>
+        <option value="explain">Explain a Topic</option>
+        <option value="quiz">Generate Quiz</option>
+        <option value="summarize">Summarize Notes</option>
+        <option value="learn">Learning Path</option>
+      </select>
+
+      <label for="input">Your input</label>
+      <textarea id="input" placeholder="Example: Explain photosynthesis in simple words..."></textarea>
+      <div class="actions">
+        <button id="submit">Generate</button>
+        <button id="clear" class="secondary">Clear</button>
+      </div>
+
+      <div id="status" class="status" hidden></div>
+      <div id="result" class="result" hidden></div>
+    </section>
+
+    <section class="features">
+      <div><strong>Q&A</strong><span>Quick academic answers</span></div>
+      <div><strong>Explain</strong><span>Simple concept breakdowns</span></div>
+      <div><strong>Quiz</strong><span>3 MCQs for revision</span></div>
+      <div><strong>Summarize</strong><span>Shorten long notes</span></div>
+      <div><strong>Learn</strong><span>Beginner to advanced path</span></div>
+    </section>
+
+    <footer>EduGenie • Built with FastAPI + Google Gemini</footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
